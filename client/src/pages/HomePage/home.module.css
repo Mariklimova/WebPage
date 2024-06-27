@@ -1,0 +1,28 @@
+.blok_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-top: 296px;
+    margin-left: 140px;
+}
+
+.blok_left h1 {
+    font: 500 96px Lexend;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.blok_left h2 {
+    font: 500 96px Lexend;
+    text-align: left;
+    color: #478BF9;
+}
+
+.blok_left p {
+    font: 500 32px Lexend;
+    text-align: left;
+    color: #FFFFFF99;
+
+
+}
