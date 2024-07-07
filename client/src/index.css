@@ -5,8 +5,8 @@
 }
 
 body {
-    max-width: 1920px;
-    max-height: 1265px;
+    width: 1920px;
+    height: 1265px;
     margin: 0 auto;
     font: 400 16px Lexend;
     color: #FFFFFF;

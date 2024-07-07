@@ -1,10 +1,14 @@
 import style from './home.module.css'
+import Header from '../../components/Header/Header'
+import Footer from '../../components/Footer/Footer'
 
 function Home() {
     return <>
+        <Header/>
+
         <div className={style.blok_left}>
             <h1>HOUSE OF</h1>
-            <h2>GAMBLING</h2>
+            <h1 className={style.blue}>GAMBLING</h1>
             <p>Raise your ROI with direct advertiser</p>
             <button>BECOME A PARTNER</button>
 
@@ -13,6 +17,7 @@ function Home() {
         <div className={style.blok_center}>
             <div className={style.line_left}></div>
             <div className={style.line_center}></div>
+            {/* <div className={style.line_center}></div> */}
             <div className={style.line_right}></div>
         </div>
 
@@ -53,6 +58,7 @@ function Home() {
             </div>
 
         </div>
+    <Footer/>
     </>
 }
 export default Home
