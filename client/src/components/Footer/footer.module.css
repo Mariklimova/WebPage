@@ -1,0 +1,114 @@
+.footer{
+    margin: auto;
+    max-width: 1520px;
+    padding: 40px 140px 24px 140px;
+
+    border-radius: 64px 64px 0px 0px;
+    border-top: 4px solid #478BF9;
+    border-right: 4px solid #478BF9;
+    border-left: 4px solid #478BF9;
+
+    display: flex;
+    justify-content: space-between;
+    background-color: #1E1231;
+};
+
+.navFooter{
+    height: 66px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 30px;
+};
+
+.navFooter p{
+    color: #FFF;
+    font:400 16px Lexend;
+    transform: 0.4s;
+    cursor: pointer;
+}
+
+&:hover{
+    color: #478BF9;
+};
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+};
+
+.info p{
+    color: #FFF;
+    text-align: right;
+    font: 400 16px Lexend;
+};
+
+.wrapperIcons .fonIcon{
+display: flex;
+gap: 8px;
+};
+
+.fonIconBlue{
+    background-image: url('../Footer/assets');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    transition: 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+& :hover{
+    background-image: url();
+};
+
+.twitter{
+    background-image: url();
+};
+
+.facebook{
+    background-image: url();
+};
+
+.instagram{
+    background-image: url();
+};
+
+.linked{
+    background-image: url();
+};
+.youtube{
+    background-image: url();
+};
+
+.tiktok{
+    background-image: url();
+};
+
+.telegram{
+    background-image: url();
+};
+
+.vk{
+    background-image: url();
+};
+
+.twitter, .facebook, .instagram,
+ .linked, .youtube, .tiktok, 
+ .telegram .vk{
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+};
+
+
+
+
+
