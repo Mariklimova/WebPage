@@ -1,57 +1,79 @@
-.footer{
-    margin: auto;
-    max-width: 1520px;
-    padding: 40px 140px 24px 140px;
+.footer {
+    margin-top: 1138px;
+    max-width: 1920px;
+    padding: 40px 140px 24px;
 
     border-radius: 64px 64px 0px 0px;
     border-top: 4px solid #478BF9;
     border-right: 4px solid #478BF9;
     border-left: 4px solid #478BF9;
-
-    display: flex;
-    justify-content: space-between;
     background-color: #1E1231;
-};
-
-.navFooter{
-    height: 66px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: flex-end;
-    gap: 30px;
-};
-
-.navFooter p{
-    color: #FFF;
-    font:400 16px Lexend;
-    transform: 0.4s;
-    cursor: pointer;
 }
 
-&:hover{
-    color: #478BF9;
-};
 
-.info{
+.footer .info {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 40px;
+    margin-right: 728px
+}
+
+
+.footer .info p {
+    color: #FFF;
+    font: 400 16px Lexend;
+}
+
+.footer .info p:hover {
+    color: #478BF9;
+}
+
+;
+
+.footer .icons {
+    display: flex;
+    /* flex-direction: column; */
     justify-content: space-between;
     gap: 15px;
-};
+}
 
-.info p{
+;
+
+.footer .isons p {
     color: #FFF;
     text-align: right;
     font: 400 16px Lexend;
-};
+}
 
-.wrapperIcons .fonIcon{
-display: flex;
-gap: 8px;
-};
+;
 
-.fonIconBlue{
-    background-image: url('../Footer/assets');
+.wrapperIcons .fonIcon {
+    display: flex;
+    gap: 8px;
+}
+
+;
+
+.wrapperIcons .fonIcon .fonIconBlue {
+    background-image: url('./assets/BlueFon.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* & :hover{
+    background-image: url('./assets/Buttons2\ -\ Socials.svg');
+}; */
+
+/* .twitter{
+    background-image: url('./assets/BlueFon.png');
     background-repeat: no-repeat;
     background-size: contain;
     width: 32px;
@@ -61,44 +83,36 @@ gap: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+}; */
 
-& :hover{
-    background-image: url();
-};
-
-.twitter{
-    background-image: url();
-};
-
-.facebook{
-    background-image: url();
+/* .facebook{
+    background-image: url('./assets/Buttons2\ -\ Socials.svg');
 };
 
 .instagram{
-    background-image: url();
+    background-image: url('./assets/Buttons3\ -\ Socials.svg');
 };
 
 .linked{
-    background-image: url();
+    background-image: url('./assets/Buttons4\ -\ Socials.svg');
 };
 .youtube{
-    background-image: url();
+    background-image: url('./assets/Buttons5\ -\ Socials.svg');
 };
 
 .tiktok{
-    background-image: url();
+    background-image: url('./assets/Buttons6\ -\ Socials.svg');
 };
 
 .telegram{
-    background-image: url();
+    background-image: url('./assets/Buttons7\ -\ Socials.svg');
 };
 
 .vk{
-    background-image: url();
-};
+    background-image: url('./assets/Buttons8\ -\ Socials.svg');
+};*/
 
-.twitter, .facebook, .instagram,
+/* .twitter, .facebook, .instagram,
  .linked, .youtube, .tiktok, 
  .telegram .vk{
     background-repeat: no-repeat;
@@ -106,9 +120,4 @@ gap: 8px;
     width: 16px;
     height: 16px;
     cursor: pointer;
-};
-
-
-
-
-
+}; */

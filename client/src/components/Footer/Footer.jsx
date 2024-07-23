@@ -3,16 +3,17 @@ import style from './footer.module.css'
 function Footer() {
     return <>
         <div className={style.footer}>
-            <div className={style.navFooter}>
+            <div className={style.info}>
                 <p>Terms & Conditions</p>
                 <p>Cookies</p>
                 <p>Contacts</p>
                 <p>Careers</p>
                 <p>Brand Guide</p>
             </div>
-            <div className={style.info}>
-                <p>Our social media:</p>
 
+            <div className={style.icons}>
+                <p>Our social media:</p>
+            
                 <div className={style.wrapperIcons}>
                     <div className={style.fonIcon}>
                         <div className={style.fonIconBlue} >
