@@ -39,63 +39,67 @@
 .blok_center {
     display: flex;
     flex-direction: column;
-
+    justify-content: center;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    top: 0;
 }
 
 .blok_center .line_left {
     background-image: url('./assets/Line_Vertical_1.svg');
     width: 100px;
-    height: 1334px;
+    height: 1170px;
     margin-left: 851px;
-    margin-top: -700px;
+    margin-top: 75px;
     background-repeat: no-repeat;
     background-size: contain;
-    animation: move 15s 0s infinite linear;
-    transform-box: view-box;
+    animation: move 3s ease infinite alternate;
+
 }
 
 .blok_center .line_center {
     background-image: url('./assets/Line_Vertical_2.svg');
     width: 102px;
-    height: 1211px;
+    height: 1170px;
     margin-left: 966px;
-    margin-top: -1330px;
+    margin-top: -1170px;
     background-repeat: no-repeat;
     background-size: contain;
-    animation: move 15s 0s infinite linear reverse;
-    transform-box: view-box;
+    animation: move 3s ease infinite alternate-reverse;
+
 }
 
 .blok_center .line_right {
     background-image: url('./assets/Line_Vertical_3.svg');
     width: 100px;
-    height: 1298px;
+    height: 1170px;
     margin-left: 1084.4px;
-    margin-top: -1210px;
+    margin-top: -1150px;
     background-repeat: no-repeat;
     background-size: contain;
-    animation: move 15s 0s infinite linear;
-    transform-box: view-box;
+    animation: move 3s ease infinite alternate;
+
 }
 
-/* @keyframes move {
+@keyframes move {
 
     0% {
-        transform: translateY(0px);
+        transform: translateY(0);
     }
 
     100% {
-        transform: translateY(1212px);
+        transform: translateY(6%);
     }
 
-} */
+}
 
 .blok_right {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-left: 1249px;
-    margin-top: -1200px;
+    margin-top: -600px;
     width: 531px;
     height: 659px;
     gap: 24px;
@@ -131,7 +135,7 @@
 
 .blok_right .scroll_bar::-webkit-scrollbar {
     width: 8px;
- 
+
 }
 
 .blok_right .scroll_bar::-webkit-scrollbar-thumb {
@@ -165,9 +169,11 @@
     background: #1E1231;
     margin-left: 6px;
 }
-.blok_right .scroll_bar .text .text_blok:hover{
-    background: #478BF9; 
+
+.blok_right .scroll_bar .text .text_blok:hover {
+    background: #478BF9;
 }
+
 .text .text_blok h5 {
     font: 400 24px Lexend;
     line-height: 28px;

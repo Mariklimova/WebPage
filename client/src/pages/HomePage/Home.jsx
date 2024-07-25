@@ -21,7 +21,6 @@ function Home() {
         <div className={style.blok_center}>
             <div className={style.line_left}></div>
             <div className={style.line_center}></div>
-            {/* <div className={style.line_center}></div> */}
             <div className={style.line_right}></div>
         </div>
 

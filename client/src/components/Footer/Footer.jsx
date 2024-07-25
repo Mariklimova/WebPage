@@ -13,7 +13,7 @@ function Footer() {
 
             <div className={style.icons}>
                 <p>Our social media:</p>
-            
+
                 <div className={style.wrapperIcons}>
                     <div className={style.fonIcon}>
                         <div className={style.fonIconBlue} >

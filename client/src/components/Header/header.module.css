@@ -28,6 +28,7 @@
 .wrapper .menu p {
     font: 400 16px Lexend;
     color: #FFFFFF;
+    cursor: pointer;
 }
 
 .wrapper .buttons {
@@ -48,12 +49,13 @@
     display: flex;
     align-items: center;
 }
+
 .buttons .blue_button{
     background-color: #478BF9;
     border: 2px solid #478BF9;
 }
 .buttons .icon{
-    background-image: url('./assets/Icon\ -\ Planet.png');
+    background-image: url('./assets/Icon\ -\ Planet.svg');
     width: 16px;
     height: 16px;
     background-repeat: no-repeat;
