@@ -1,10 +1,9 @@
-import LanguageIcon from '@mui/icons-material/Language';
 import style from './header.module.css'
 import { useState } from 'react'
 
-function Header() {
+export default function Header() {
     const [language, setLanguage] = useState('EN');
-
+    const changeLanguage = () => setLanguage(language == 'EN' ? 'RU' : 'EN')
     return <>
         <div className={style.wrapper}>
             <input type="text" />
@@ -18,13 +17,12 @@ function Header() {
             </div>
             <div className={style.buttons}>
                 <div className={style.buttons}>
-                    <button  onClick={() => language === "EN" ? setLanguage('RU') : setLanguage('EN')}><LanguageIcon style={{ color: '#9DADF2' }}></LanguageIcon> EN</button>
-                    <button>LOG IN</button>
-                    <button className={style.blue_button}>SIGN UP</button>
+                    <div><button onClick={changeLanguage}><div className={style.icon}></div>{language}</button></div>
+                    <button className={style.btn_blue}>LOG IN</button>
+                    <button className={style.btn_blue}>SIGN UP</button>
                 </div>
             </div>
         </div>
     </>
 
 }
-export default Header;
