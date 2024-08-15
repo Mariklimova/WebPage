@@ -8,12 +8,7 @@ export default function Header() {
         <div className={style.wrapper}>
             <input type="text" />
             <div className={style.menu}>
-                <p>About us</p>
-                <p>Brands</p>
-                <p>Commissions</p>
-                <p>News</p>
-                <p>Contact us</p>
-                <p>Careers</p>
+                {['About us', 'Brands', 'Commissions', 'News', 'Contact us', 'Careers'].map((el, i) => <p key={i}>{el}</p>)}
             </div>
             <div className={style.buttons}>
                 <div className={style.buttons}>

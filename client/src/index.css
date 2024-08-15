@@ -5,8 +5,10 @@
 }
 
 body {
-    width: 1900px;
-    height: max-content;
+    /* width: 1900px; */
+    width: 100vw;
+    /* height: max-content; */
+    /* height: 1265px; */
     margin: 0 auto;
     font: 400 16px Lexend;
     color: #FFFFFF;

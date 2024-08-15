@@ -20,6 +20,9 @@
             background-color: #110A1D;
             border: 0.1px solid #478BF9;
         }
+        &:focus{
+            background-color: #478BF9;
+        }
     }
 
     .menu {
@@ -35,6 +38,7 @@
 
             &:hover{
                 color: #478BF9;
+                text-decoration: underline;
             }
         }
     }

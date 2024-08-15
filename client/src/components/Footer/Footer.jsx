@@ -1,14 +1,10 @@
 import style from './footer.module.css'
 
-function Footer() {
+export default function Footer() {
     return <>
         <div className={style.footer}>
             <div className={style.info}>
-                <p>Terms & Conditions</p>
-                <p>Cookies</p>
-                <p>Contacts</p>
-                <p>Careers</p>
-                <p>Brand Guide</p>
+                {['Terms & Conditions', 'Cookies', 'Contacts', 'Careers', 'Brand Guide'].map((el, i) => <p key={i}>{el}</p>)}
             </div>
 
             <div className={style.icons}>
@@ -16,34 +12,15 @@ function Footer() {
 
                 <div className={style.wrapperIcons}>
                     <div className={style.fonIcon}>
-                        <div className={style.fonIconBlue} >
-                            <div className={style.twitter}></div>
-                        </div>
-                        <div className={style.fonIconBlue} >
-                            <div className={style.facebook}></div>
-                        </div>
-                        <div className={style.fonIconBlue} >
-                            <div className={style.instagram}></div>
-                        </div>
-                        <div className={style.fonIconBlue} >
-                            <div className={style.linked}></div>
-                        </div>
-                        <div className={style.fonIconBlue} >
-                            <div className={style.youtube}></div>
-                        </div>
-                        <div className={style.fonIconBlue} >
-                            <div className={style.tiktok}></div>
-                        </div>
-                        <div className={style.fonIconBlue} >
-                            <div className={style.telegram}></div>
-                        </div>
-                        <div className={style.fonIconBlue} >
-                            <div className={style.vk}></div>
-                        </div>
+                        {[style.twitter, style.facebook, style.instagram, style.linked, style.youtube, style.tiktok, style.telegram, style.vk].map((el, i) =>
+                            <div key={i} className={style.fonIconBlue} >
+                                <div className={el}></div>
+                            </div>
+                        )}
                     </div>
                 </div>
             </div>
         </div >
     </>
 }
-export default Footer;
+// export default Footer;
