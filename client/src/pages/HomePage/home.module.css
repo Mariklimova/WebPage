@@ -1,15 +1,18 @@
 .main{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    /* margin: auto; */
 }
 
 .block_title {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-right: 550px;
     /* align-items: start; */
-    margin-top: 296px;
-    margin-left: 140px;
+    /* margin-top: 296px;
+    margin-left: 140px; */
 
     h1 {
         font: 500 96px Lexend;
@@ -48,9 +51,11 @@
 
 
 .block_animation {
+    /* left: 1220px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /* align-items: center; */
     position: absolute;
     z-index: -1;
     width: 100%;
@@ -109,16 +114,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 600px;
-    margin-top: 150px;
-    width: 531px;
-    height: 659px;
+    justify-content: center;
+    /* margin-left: 500px; */
+    /* margin-top: 150px; */
+    /* width: 531px;
+    height: 659px; */
     gap: 24px;
 
     h3 {
         font: 600 40px Lexend;
         color: #FFFFFF;
-    
     }
 
     .container {
@@ -127,17 +132,18 @@
         border-radius: 100px;
         background: #FFFFFF1F;
         border: 3px solid #478BF9;
-        display: flex;
+        /* display: flex; */
         /* padding-top: 10px; */
 
         .scroll_bar {
             /* width: 490px; */
             height: 590px;
-            /* margin-bottom: 20px; */
+            margin:0;
+            /* border: 3px solid #478BF9; */
             /* margin-left: 2px; */
             border-radius: 100px;
             overflow-y: scroll;
-            padding: 16px 20px;
+            padding: 24px 30px 20px 16px;
 
             &::-webkit-scrollbar {
                 width: 8px;
@@ -153,17 +159,17 @@
 
 
 .block_info .scroll_bar::-webkit-scrollbar-thumb {
-    /* width: 8px; */
+    width: 8px;
+    height: 20px;
     border-radius: 10px;
-    background: #FFFFFF1F;
-    margin-top: 96px;
+    background: #478BF9;
 }
 
 .block_info .scroll_bar::-webkit-scrollbar-track {
-    /* background-color: #478BF9; */
-    max-height: 104px;
+    background-color: #fff;
+    height: 5px;
     border-radius: 10px;
-    margin-top: 96px;
+    /* margin-top: 96px; */
 }
 
 .block_info .scroll_bar .text {
@@ -182,6 +188,7 @@
     border-radius: 196px;
     background: #1E1231;
     margin-left: 6px;
+    cursor: pointer;
 }
 
 .block_info .scroll_bar .text .text_blok:hover {

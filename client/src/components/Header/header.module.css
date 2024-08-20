@@ -1,8 +1,8 @@
 .wrapper {
     width: 1640px;
     height: 96px;
-    margin-top: 16px;
-    margin-left: 140px;
+    margin: 16px auto 140px;
+    /* margin-left: 140px; */
     padding: 24px 48px;
     border-radius: 64px;
     background-color: #110A1D;
