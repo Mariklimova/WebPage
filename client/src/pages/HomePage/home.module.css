@@ -51,7 +51,7 @@
 
 
 .block_animation {
-    /* left: 1220px; */
+    left: -250px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -132,7 +132,7 @@
         border-radius: 100px;
         background: #FFFFFF1F;
         border: 3px solid #478BF9;
-        /* display: flex; */
+        display: flex;
         /* padding-top: 10px; */
 
         .scroll_bar {
@@ -143,7 +143,7 @@
             /* margin-left: 2px; */
             border-radius: 100px;
             overflow-y: scroll;
-            padding: 24px 30px 20px 16px;
+            padding: 24px 15px 20px 25px;
 
             &::-webkit-scrollbar {
                 width: 8px;
@@ -167,7 +167,7 @@
 
 .block_info .scroll_bar::-webkit-scrollbar-track {
     background-color: #fff;
-    height: 5px;
+    /* height: 5px; */
     border-radius: 10px;
     /* margin-top: 96px; */
 }
