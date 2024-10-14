@@ -32,19 +32,17 @@ function Home() {
 
             <div className={style.block_info}>
                 <h3>BLOG</h3>
+                <div className={style.container}>
                     <div className={style.scroll}>
                         <div className={style.text_block}>
-                            {arrInfoBlog.map((el, i) =>
+                            {arrInfoBlog.map((el, i) => (
                                 <div key={i} className={style.text_item}>
                                     <h5>{el.description}</h5>
                                     <p>{el.date}</p>
                                 </div>
-                            )}
+                            ))}
                         </div>
-                     
-
                     </div>
-                <div className={style.container}>
 
                 </div>
 

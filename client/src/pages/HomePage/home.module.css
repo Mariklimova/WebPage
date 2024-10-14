@@ -2,7 +2,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin: auto; */
+    margin: auto;
+    position: relative;
+    max-width: 1700px;
+    /* flex-wrap: wrap; */
 }
 
 .block_title {
@@ -51,7 +54,7 @@
 
 
 .block_animation {
-    /* left: -250px; */
+    left: -250px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -59,7 +62,11 @@
     position: absolute;
     z-index: -1;
     width: 100%;
-    top: 0;
+    /* top: 0; */
+
+    top: 62%; /* Сдвигаем по вертикали на 50% */
+    left: 40%; /* Сдвигаем по горизонтали на 50% */
+    transform: translate(-50%, -50%); 
 }
 
 .block_animation .line_left {
@@ -115,10 +122,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* margin-left: 500px; */
-    /* margin-top: 150px; */
-    /* width: 531px;
-    height: 659px; */
     gap: 24px;
 
     h3 {
@@ -126,28 +129,20 @@
         color: #FFFFFF;
     }
 
-    /* .container { */
-        /* width: 531px; */
-        /* height: 595px; */
-        /* border-radius: 100px; */
-        /* background: #FFFFFF1F; */
-        /* border: 3px solid #478BF9; */
-        /* display: flex; */
-        /* padding-top: 10px; */
+    .container {
+        width: 531px;
+        background: #FFFFFF1F;
+        border: 3px solid #478BF9;
+        border-radius: 100px;
+        height: 595px;
 
         .scroll {
-            width: 531px;
-            background: #FFFFFF1F;
-            height: 595px;
-            /* margin: 0; */
-            border: 3px solid #478BF9;
-            /* margin-left: 2px; */
-            border-radius: 100px;
+            width: 519px;
+            height: 575px;
+            border-radius: 95px;
             overflow-y: auto;
-            /* padding-right: 20px; */
-            /* padding: 24px 24px 40px; */
+            margin-top: 16px;
 
-            /* overflow-y: auto; */
             &::-webkit-scrollbar {
                 width: 8px;
                 border-radius: 10px;
@@ -156,65 +151,57 @@
 
             &::-webkit-scrollbar-track {
                 background-color: #fff;
-                /* height: 5px; */
                 border-radius: 10px;
                 margin-top: 96px;
                 margin-bottom: 96px;
-
             }
 
             &::-webkit-scrollbar-thumb {
                 width: 8px;
-                height: 104px;
                 border-radius: 10px;
                 background: #478BF9;
             }
 
 
+            .text_block {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 16px;
+                /* margin: 24px 40px 24px 24px; */
+                margin: 20px;
+
+                .text_item {
+                    width: 467px;
+                    height: 146px;
+                    padding: 16px 64px;
+                    border-radius: 196px;
+                    background: #1E1231;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: #478BF9;
+                    }
+
+                    h5 {
+                        font: 400 24px Lexend;
+                        line-height: 28px;
+                        text-align: left;
+                    }
+
+                    p {
+                        font: 450 14px Lexend;
+                        text-align: left;
+                        margin-top: 14px;
+                    }
+                }
+            }
         }
-    /* } */
-}
+    }
 
 
 
 
 
 
-
-
-.block_info .scroll .text_block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* margin-top: -475px; */
-    /* margin-left: -24px; */
-    gap: 16px;
-    margin: 24px 40px 24px 24px;
-}
-
-.block_info .scroll .text_block .text_item {
-    width: 467px;
-    height: 146px;
-    padding: 16px 64px;
-    border-radius: 196px;
-    background: #1E1231;
-    margin-left: 6px;
-    cursor: pointer;
-}
-
-.block_info .scroll .text_block .text_item:hover {
-    background: #478BF9;
-}
-
-.text_block .text_item h5 {
-    font: 400 24px Lexend;
-    line-height: 28px;
-    text-align: left;
-
-}
-
-.text_block .text_item p {
-    font: 450 14px Lexend;
-    text-align: left;
-    margin-top: 14px;
 }
