@@ -5,17 +5,13 @@
     margin: auto;
     position: relative;
     max-width: 1700px;
-    /* flex-wrap: wrap; */
 }
 
 .block_title {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-right: 550px;
-    /* align-items: start; */
-    /* margin-top: 296px;
-    margin-left: 140px; */
+    margin-right: 30%;
 
     h1 {
         font: 500 96px Lexend;
@@ -34,9 +30,8 @@
     }
 
     button {
-        width: 393px;
+        max-width: 393px;
         height: 72px;
-        /* padding: 20px 70px; */
         border-radius: 48px;
         font: 600 24px Lexend;
         color: #FFFFFF;
@@ -54,59 +49,53 @@
 
 
 .block_animation {
-    left: -250px;
+    /* left: -250px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
     position: absolute;
     z-index: -1;
     width: 100%;
     /* top: 0; */
 
-    top: 62%; /* Сдвигаем по вертикали на 50% */
-    left: 40%; /* Сдвигаем по горизонтали на 50% */
-    transform: translate(-50%, -50%); 
-}
+    top: 62%;
+    /* Сдвигаем по вертикали на 50% */
+    left: 40%;
+    /* Сдвигаем по горизонтали на 50% */
+    transform: translate(-50%, -50%);
 
-.block_animation .line_left {
-    background-image: url('./assets/Line_Vertical_1.svg');
-    width: 100px;
-    height: 1300px;
-    margin-left: 851px;
-    margin-top: 20px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    animation: move 3s ease infinite alternate;
+    .line_left,
+    .line_center,
+    .line_right {
+        width: 100px;
+        height: 1300px;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
 
-}
+    .line_left {
+        background-image: url('./assets/Line_Vertical_1.svg');
+        margin-left: 851px;
+        margin-top: 20px;
+        animation: move 3s ease infinite alternate;
+    }
 
-.block_animation .line_center {
-    background-image: url('./assets/Line_Vertical_2.svg');
-    width: 100px;
-    height: 1300px;
-    margin-left: 966px;
-    margin-top: -1280px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    animation: move 3s ease infinite alternate-reverse;
+    .line_center {
+        background-image: url('./assets/Line_Vertical_2.svg');
+        margin-left: 966px;
+        margin-top: -1280px;
+        animation: move 3s ease infinite alternate-reverse;
+    }
 
-}
-
-.block_animation .line_right {
-    background-image: url('./assets/Line_Vertical_3.svg');
-    width: 100px;
-    height: 1300px;
-    margin-left: 1084.4px;
-    margin-top: -1305px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    animation: move 3s ease infinite alternate;
-
+    .line_right {
+        background-image: url('./assets/Line_Vertical_3.svg');
+        margin-left: 1084.4px;
+        margin-top: -1305px;
+        animation: move 3s ease infinite alternate;
+    }
 }
 
 @keyframes move {
-
     0% {
         transform: translateY(0);
     }
@@ -114,7 +103,6 @@
     100% {
         transform: translateY(6%);
     }
-
 }
 
 .block_info {
@@ -137,7 +125,7 @@
         height: 595px;
 
         .scroll {
-            width: 519px;
+            max-width: 519px;
             height: 575px;
             border-radius: 95px;
             overflow-y: auto;
@@ -172,7 +160,7 @@
                 margin: 20px;
 
                 .text_item {
-                    width: 467px;
+                    max-width: 467px;
                     height: 146px;
                     padding: 16px 64px;
                     border-radius: 196px;
@@ -198,10 +186,31 @@
             }
         }
     }
+}
 
+@media (max-width:400px) {
+    .main {
+        flex-wrap: wrap;
+    }
 
+    .block_title {
+        margin-bottom: 130%;
+    }
 
+    .block_animation {
+        width: 50%;
+        transform: translate(-50%, -50%) rotate(90deg);
+        margin-left: 230px;
+        margin-top: -1220px;
+    }
 
-
+    /* .line_left {
+        background-image: url(../../assets/Line_Vertical_1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 101px;
+        height: 1100px;
+        animation: moveItem 3s ease infinite alternate;
+    } */
 
 }

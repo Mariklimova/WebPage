@@ -1,6 +1,6 @@
 .footer {
     margin: 140px auto 0;
-    width: max-content;
+    max-width: 1960px;
     padding: 40px 140px 24px;
 
     border-radius: 64px 64px 0px 0px;
@@ -18,7 +18,7 @@
         flex-direction: row;
         align-items: flex-end;
         gap: 40px;
-        margin-right: 720px;
+        /* margin-right: 720px; */
         /* height: 66px; */
 
         p {
@@ -114,5 +114,14 @@
                 }
             }
         }
+    }
+}
+
+@media (max-width:400px) {
+    .footer {
+        padding: 20px;
+    }
+    .footer .info {
+        flex-direction: column;
     }
 }

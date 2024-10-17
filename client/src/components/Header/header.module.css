@@ -1,8 +1,6 @@
 .wrapper {
-    width: 1640px;
-    height: 96px;
+    max-width: 1640px;
     margin: 16px auto 140px;
-    /* margin-left: 140px; */
     padding: 24px 48px;
     border-radius: 64px;
     background-color: #110A1D;
@@ -11,7 +9,7 @@
     justify-content: space-between;
 
     input {
-        width: 287px;
+        max-width: 287px;
         height: 32px;
         background-color: #110A1D;
         border: none;
@@ -80,6 +78,12 @@
             font: 400 16px Lexend;
     
         }
+    }
+}
+
+@media (max-width:400px) {
+    .menu {
+        display: none;
     }
 }
 
