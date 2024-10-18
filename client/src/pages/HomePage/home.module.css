@@ -191,6 +191,7 @@
 @media (max-width:400px) {
     .main {
         flex-wrap: wrap;
+        justify-content: flex-start;
     }
 
     .block_title {
@@ -203,14 +204,5 @@
         margin-left: 230px;
         margin-top: -1220px;
     }
-
-    /* .line_left {
-        background-image: url(../../assets/Line_Vertical_1.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 101px;
-        height: 1100px;
-        animation: moveItem 3s ease infinite alternate;
-    } */
 
 }

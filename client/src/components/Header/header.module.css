@@ -18,7 +18,8 @@
             background-color: #110A1D;
             border: 0.1px solid #478BF9;
         }
-        &:focus{
+
+        &:focus {
             background-color: #478BF9;
         }
     }
@@ -34,17 +35,23 @@
             color: #FFFFFF;
             cursor: pointer;
 
-            &:hover{
+            &:hover {
                 color: #478BF9;
                 text-decoration: underline;
             }
         }
     }
+
     .buttons {
         display: flex;
         justify-content: space-between;
         gap: 14px;
-    
+
+        .drop_down_menu {
+            display: none;
+            position: relative;
+        }
+        
         button {
             width: max-content;
             height: 48px;
@@ -56,13 +63,14 @@
             color: #FFFFFF;
             display: flex;
             align-items: center;
-    
+            
         }
         
         .btn_blue:hover {
             background-color: #478BF9;
             border-color: #478BF9
         }
+        
         .icon {
             background-image: url('./assets/IconPlanet.svg');
             width: 16px;
@@ -71,21 +79,58 @@
             background-size: contain;
             margin-right: 2px;
         }
-    
+        
+        .icon_burger {
+            background-image: url('./assets/Menu.svg');
+            width: 28px;
+            height: 28px;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        
         p {
             color: #FFF;
             text-align: center;
             font: 400 16px Lexend;
-    
+            
         }
     }
 }
 
-@media (max-width:400px) {
-    .menu {
-        display: none;
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    position: absolute; /* Для позиционирования */
+    top: 100%; /* Под кнопкой */
+    left: 0;
+    background-color: #110A1D;
+    /* border: 2px solid #9DADF2; */
+    border-radius: 8px; /* Округление углов */
+    z-index: 10; /* Чтобы меню было поверх других элементов */
+    padding: 16px; /* Отступы */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2); /* Тень под меню */
+}
+
+.dropdown p {
+    color: #FFFFFF;
+    margin: 8px 0; /* Отступы между элементами */
+    cursor: pointer;
+    &:hover {
+        color: #478BF9;
+        text-decoration: underline;
     }
 }
 
+.dropdown button {
+    margin: 8px 0; /* Отступы между кнопками */
+}
 
+@media (max-width:400px) {
+    .wrapper .menu {
+        display: none;
 
+    }
+    .wrapper .buttons .drop_down_menu {
+        display: block;
+    }
+}
