@@ -13,6 +13,7 @@
         height: 32px;
         background-color: #110A1D;
         border: none;
+        margin: auto 0;
 
         &:hover {
             background-color: #110A1D;
@@ -50,9 +51,12 @@
         .drop_down_menu {
             display: none;
             position: relative;
+            background-color: #110A1D;
+            border: none;
         }
-        
-        button {
+
+        .language_button,
+        .btn_blue {
             width: max-content;
             height: 48px;
             padding: 14px;
@@ -63,14 +67,14 @@
             color: #FFFFFF;
             display: flex;
             align-items: center;
-            
+            cursor: pointer;
         }
-        
+
         .btn_blue:hover {
             background-color: #478BF9;
             border-color: #478BF9
         }
-        
+
         .icon {
             background-image: url('./assets/IconPlanet.svg');
             width: 16px;
@@ -79,20 +83,20 @@
             background-size: contain;
             margin-right: 2px;
         }
-        
+
         .icon_burger {
             background-image: url('./assets/Menu.svg');
-            width: 28px;
-            height: 28px;
+            width: 50px;
+            height: 50px;
             background-repeat: no-repeat;
             background-size: contain;
         }
-        
+
         p {
             color: #FFF;
             text-align: center;
             font: 400 16px Lexend;
-            
+
         }
     }
 }
@@ -100,21 +104,30 @@
 .dropdown {
     display: flex;
     flex-direction: column;
-    position: absolute; /* Для позиционирования */
-    top: 100%; /* Под кнопкой */
+    position: absolute;
+    /* Для позиционирования */
+    top: 20%;
+    /* Под кнопкой */
     left: 0;
-    background-color: #110A1D;
+    background-color:  #1E1231;
     /* border: 2px solid #9DADF2; */
-    border-radius: 8px; /* Округление углов */
-    z-index: 10; /* Чтобы меню было поверх других элементов */
-    padding: 16px; /* Отступы */
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2); /* Тень под меню */
+    border-radius: 8px;
+    /* Округление углов */
+    z-index: 10;
+    /* Чтобы меню было поверх других элементов */
+    padding: 16px;
+    /* Отступы */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    /* Тень под меню */
+    width: 100vh;
 }
 
 .dropdown p {
     color: #FFFFFF;
-    margin: 8px 0; /* Отступы между элементами */
+    margin: 8px 0;
+    /* Отступы между элементами */
     cursor: pointer;
+
     &:hover {
         color: #478BF9;
         text-decoration: underline;
@@ -122,15 +135,39 @@
 }
 
 .dropdown button {
-    margin: 8px 0; /* Отступы между кнопками */
+    margin: 8px 0;
+    /* Отступы между кнопками */
 }
 
 @media (max-width:400px) {
+    .wrapper {
+        width: 100vh;
+        padding: 12px 24px;
+    }
+
     .wrapper .menu {
         display: none;
 
     }
+
     .wrapper .buttons .drop_down_menu {
         display: block;
+
+    }
+
+    .wrapper .buttons .btn_blue {
+        display: none;
+    }
+    .wrapper .buttons .icon{
+       width: 30px;
+       height: 30px;
+    }
+
+    .wrapper .buttons .language_button {
+        padding: 8px;
+
+    }
+    .language_name {
+        display: none;
     }
 }
